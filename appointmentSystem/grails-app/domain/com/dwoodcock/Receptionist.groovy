@@ -2,9 +2,9 @@ package com.dwoodcock
 
 class Receptionist {
 	String recepName
-	varchar recerEmail
-	varchar recepUsername
-	varchar recepPassword
+	String recepEmail
+	String recepUsername
+	String recepPassword
 	int recepPhone
 
     static constraints = {

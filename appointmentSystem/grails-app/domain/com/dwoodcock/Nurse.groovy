@@ -3,7 +3,7 @@ package com.dwoodcock
 class Nurse {
 	String nurseName
 	String qualifications
-	varchar nurseEmail
+	String nurseEmail
 	int nurseOffice
 	int nursePhone
 

@@ -3,11 +3,11 @@ package com.dwoodcock
 class Surgery {
 	String name
 	String address
-	varchar postcode
+	String postcode
 	int telephone
 	int numberOfPatients
 	String description
-	time openingTime
+	Date openingTime
 
     static constraints = {
 	name nullable: false, blank: false

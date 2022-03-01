@@ -1,11 +1,11 @@
 package com.dwoodcock
 
 class Patient {
-	String paatientName
-	varchar patientAddress
+	String patientName
+	String patientAddress
 	String patientResidence
 	Date patientDob
-	varchar patientID
+	String patientID
 	Date dateRegistered
 	int patientPhone
 

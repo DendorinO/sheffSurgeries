@@ -4,9 +4,9 @@ class Doctor {
 	String fullName
 	String qualification
 	String position
-	varchar doctorEmail
-	varchar password
-	varchar doctorOffice
+	String doctorEmail
+	String password
+	String doctorOffice
 	int doctorPhone
 	String bio
 

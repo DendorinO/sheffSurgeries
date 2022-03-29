@@ -6,9 +6,11 @@ class Doctor {
 	String position
 	String doctorEmail
 	String password
-	String doctorOffice
-	int doctorPhone
+	int doctorOffice
+	String doctorPhone
 	String bio
+	static hasMany = [prescriptions:Prescription, patients:Patient, nurses:Nurse, appointments:Appointment]
+	static belongsTo = [surgery:Surgery]
 
     static constraints = {
 	fullName nullable: false, blank: false

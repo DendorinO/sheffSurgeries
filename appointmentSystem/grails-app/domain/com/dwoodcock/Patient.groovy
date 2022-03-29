@@ -7,7 +7,11 @@ class Patient {
 	Date patientDob
 	String patientID
 	Date dateRegistered
-	int patientPhone
+	String patientPhone
+	static belongsTo = [Doctor, Surgery]
+	static hasMany = [doctors:Doctor, surgeries:Surgery, prescriptions: Prescription]
+	Appointment appointment
+
 
     static constraints = {
 	patientName nullable: false, blank: false

@@ -5,7 +5,8 @@ class Receptionist {
 	String recepEmail
 	String recepUsername
 	String recepPassword
-	int recepPhone
+	String recepPhone
+	static belongsTo = [surgery:Surgery]
 
     static constraints = {
 	recepName nullable:false, blank: false

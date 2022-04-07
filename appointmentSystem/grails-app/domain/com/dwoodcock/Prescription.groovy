@@ -7,7 +7,8 @@ class Prescription {
 	float totalCost
 	Date dateIssued
 	Boolean patientPaying
-	static belongsTo = [doctor:Doctor, patient:Patient]
+	static hasOne = [doctor:Doctor]
+	static belongsTo = [Doctor, Patient]
 
     static constraints = {
 	pharmacyName nullable: false, blank: false

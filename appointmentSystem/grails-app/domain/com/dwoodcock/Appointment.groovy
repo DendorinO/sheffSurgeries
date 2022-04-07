@@ -7,7 +7,7 @@ class Appointment {
 	int roomNumber
 	static hasOne = [patient:Patient]
 	static hasMany = [surgeries:Surgery]
-	static belongsTo = [doctor:Doctor] [Surgery]
+	static belongsTo = [doctor:Doctor][Surgery]
 
     static constraints = {
 	appDate blank: false, nullable: false

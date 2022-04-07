@@ -96,23 +96,23 @@ hibernate:
 dataSource:
     pooled: true
     jmxExport: true
-    driverClassName: org.h2.Driver
-    username: sa
-    password: ''
+    driverClassName: com.mysql.jdbc.Driver
+    username: c0025209
+    password: password
 
 environments:
     development:
         dataSource:
-            dbCreate: create-drop
-            url: jdbc:h2:mem:devDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            dbCreate: update
+            url: jdbc:mysql://localhost:3306/development
     test:
         dataSource:
             dbCreate: update
-            url: jdbc:h2:mem:testDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            url: jdbc:mysql://localhost:3306/test
     production:
         dataSource:
             dbCreate: none
-            url: jdbc:h2:./prodDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            url: jdbc:mysql://localhost:3306/production
             properties:
                 jmxEnabled: true
                 initialSize: 5

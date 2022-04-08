@@ -10,6 +10,7 @@ class Prescription {
 	static hasOne = [doctor:Doctor]
 	static belongsTo = [Doctor, Patient]
 
+
     static constraints = {
 	pharmacyName nullable: false, blank: false
 	prescripNumber nullable: false, blank: false

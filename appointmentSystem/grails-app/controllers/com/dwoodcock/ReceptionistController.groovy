@@ -96,4 +96,27 @@ class ReceptionistController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+	def login() {
+
+	}
+
+	def validate() {
+		def user = Receptionist.findByUsername(params.username)
+		if (user && user.password == params.password){
+			session.user=user
+			
+			render view:'home'
+		} else {
+
+			flash.message="inavlid username and password."
+			
+			render view:'login'
+		}
+	}
+
+	def logout = {
+		session.user=null
+		redirect(uri:'/')
+	}
 }

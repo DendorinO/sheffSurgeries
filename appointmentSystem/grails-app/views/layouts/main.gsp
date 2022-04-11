@@ -22,6 +22,8 @@
  	</div>
 </nav>
 
+<g:loginToggle/>
+
 <g:layoutBody/>
 
 <div class="footer" role="contentinfo">

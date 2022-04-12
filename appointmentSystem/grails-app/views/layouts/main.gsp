@@ -18,11 +18,13 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
 	<div class="row">
- 		<asset:image src="banner.jpg" width="1500" height="200"/>
+ 		<asset:image src="banner.jpg" width="1700" height="200"/>
  	</div>
 </nav>
 
-<g:loginToggle/>
+<g:recepLoginToggle/>
+
+<g:docLoginToggle/>
 
 <g:layoutBody/>
 

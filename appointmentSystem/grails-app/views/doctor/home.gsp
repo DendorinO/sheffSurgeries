@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+
 <style>
 
 button {
@@ -32,7 +33,7 @@ body {
 }
 
 </style>
-</head> 
+</head>
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
 	<div class="row">
@@ -40,33 +41,35 @@ body {
  	</div>
 </nav>
 
+
 <body>
 
 <h1> Welcome </h1>
-
 
 <div class="second">
 
 <p>Click on the buttons to be taken to the appropriate form!</p>
 
 <button type="button">
-	<g:link controller="patient" action="create"> Create a new Patient</g:link>
+	<g:link controller="prescription" action="create"> Create a new Prescription </g:link>
 </button>
+
 <br/>
+
 <button type="button">
-<g:link controller="doctor" action="create"> Create a new Doctor</g:link>
+<g:link controller="prescription" action="list"> List Prescriptions </g:link>
 </button>
+
 <br/>
+
 <button type="button">
-<g:link controller="nurse" action="create"> Create a new Nurse</g:link>
+<g:link controller="patient" action="list"> List Patients </g:link>
 </button>
+
 <br/>
+
 <button type="button">
-<g:link controller="receptionist" action="create"> Create a new Receptionist</g:link>
-</button>
-<br/>
-<button type="button">
-<g:link controller="patient" action="advSearch"> Search for Patients</g:link>
+<g:link controller="appointment" action="list"> List Appointments </g:link>
 </button>
 
 </div>

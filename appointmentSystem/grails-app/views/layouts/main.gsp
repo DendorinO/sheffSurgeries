@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+<style>
+button {
+  background-color: #3e9dc9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+  width: 150px;
+}
+
+body {
+ background-color: #4fc7ff;
+}
+
+</style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>
@@ -20,13 +40,21 @@
 	<div class="row">
  		<asset:image src="banner.jpg" width="1700" height="200"/>
  	</div>
+	<div class="title">
+		<title>Welcome to the surgery management system!</title>
+	</div>
 </nav>
 
-<g:recepLoginToggle/>
-
-<g:docLoginToggle/>
-
+<button type="button">
+	<g:recepLoginToggle/>
+</button>
+<br/>
+<br/>
+<button type="button">
+	<g:docLoginToggle/>
+</button>
 <g:layoutBody/>
+
 
 <div class="footer" role="contentinfo">
     <div class="container-fluid">

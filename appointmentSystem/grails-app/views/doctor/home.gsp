@@ -5,7 +5,7 @@
 <style>
 
 button {
-  background-color: #008c89;
+  background-color: #3e9dc9;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -20,16 +20,16 @@ button {
 
 h1 {
  text-align: center;
- background-color: #008c89;
+ background-color: #3e9dc9;
 }
 
 p {
  text-align: center;
- background-color: #008c89;
+ background-color: #3e9dc9;
 }
 
 body {
- background-color: #006966;
+ background-color: #4fc7ff;
 }
 
 </style>
@@ -57,19 +57,23 @@ body {
 <br/>
 
 <button type="button">
-<g:link controller="prescription" action="list"> List Prescriptions </g:link>
+<g:link controller="prescription" action="index"> List Prescriptions </g:link>
 </button>
 
 <br/>
 
 <button type="button">
-<g:link controller="patient" action="list"> List Patients </g:link>
+<g:link controller="patient" action="index"> List Patients </g:link>
 </button>
 
 <br/>
 
 <button type="button">
-<g:link controller="appointment" action="list"> List Appointments </g:link>
+<g:link controller="appointment" action="index"> List Appointments </g:link>
+</button>
+
+<button type="button">
+<g:link controller="prescription" action="advSearch"> Search for Prescriptions</g:link>
 </button>
 
 </div>

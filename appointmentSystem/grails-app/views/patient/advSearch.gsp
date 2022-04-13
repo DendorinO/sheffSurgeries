@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title> Surgeries Management System - Advanced Search</title>
+    <title> Patient Management System - Advanced Search</title>
 </head>
 <body>
 <div class="row">
@@ -13,11 +13,11 @@
     <g:form action="advResults">
     <tr>
         <td>Name</td>
-        <td><g:textField name="name"/></td>
+        <td><g:textField name="patientName"/></td>
     </tr>
     <tr>
         <td>Residence</td>
-        <td><g:textField name="residence"/></td>
+        <td><g:textField name="patientResidence"/></td>
     </tr>
     <tr>
         <td>Patient ID</td>

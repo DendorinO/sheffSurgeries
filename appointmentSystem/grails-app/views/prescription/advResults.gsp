@@ -8,20 +8,20 @@
 </head>
 <body>
 <div class="row">
-    <h1>Surgery Management System</h1>
+    <h1>Prescription Management System</h1>
 <h3>Advanced Results</h3>
 <p>Searched
 
-for students matching <em>${term}</em>.
+for prescriptions matching <em>${term}</em>.
 
-Found<strong>${patients.size()}</strong>patients.
+Found<strong>${prescriptions.size()}</strong>prescriptions.
 
 </p>
 <ul>
 
-    <g:each var="patient" in="${patients}">
+    <g:each var="prescription" in="${prescriptions}">
 
-    <li><g:link controller="patient" action="show" id="${patient.id}">${patient.patientName}</g:link></li>
+    <li><g:link controller="prescription" action="show" id="${prescription.prescripNumber}">${prescription.medicine}</g:link></li>
 
     </g:each>
 </ul>
@@ -29,4 +29,3 @@ Found<strong>${patients.size()}</strong>patients.
 </div>
 </body>
 </html>
-
